@@ -1,14 +1,20 @@
 .details-wrapper{
-    max-width: 900px;
-    margin: 20px auto;
-    position:relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    max-width: 100%;
 }
 
 .details {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
     ::ng-deep mwl-gauge {
         width: 150px;
         height:150px;
-        display: block;
         padding: 10px;
     
         .dail {
@@ -28,14 +34,13 @@
     }
     
     .game-gauge {
-        position: absolute;
+        position: center;
         top: 50px;
-        right: 0;
+        justify-content: center;
 
         &-label {
             font-size: 20px;
             color: #cf4449;
-            position: relative;
             bottom: 60px;
         }
     }
@@ -44,11 +49,9 @@
 
 
 .game {
-
     &-banner {
         height: 442px;
         overflow: hidden;
-
         &-img {
             width: 100%;
             filter: blur(3px);
@@ -56,13 +59,14 @@
     }
 
     &-content {
+        position:absolute;
         text-align: center;
-        position: relative;
-        top: -200px;
+        top: 100px;
     }
 
     &-header{
         &-title {
+            width:100%;
             font-size: 70px;
             color: #cf4449;
             font-weight: 700;
@@ -78,7 +82,6 @@
         &-genres {
             color: #cf4449;
             font-weight: 700;
-
         }
     }
 }
