@@ -11,7 +11,7 @@ import { HttpService } from 'src/app/services/http.service';
 })
 export class DetailsComponent implements OnInit {
 
-  gameRating = 80;
+  gameRating = 0;
   gameId!: string;
   game!: Game;
   routeSub!: Subscription;
